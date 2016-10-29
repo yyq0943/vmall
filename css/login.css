@@ -1,0 +1,29 @@
+#wrap{ width:100%; height:900px; background: #f8f8f8;}
+#inner { width:990px; height:900px;margin:0 auto; }
+#header { width:990px; height:100px; color:#999; padding-top:12px; line-height:50px; font-size:20px;}
+#header img{ float: left;}
+#header i{ font-size:22px;}
+#main { height:600px;}
+
+/*登录表单样式*/
+
+.loginBox{ width:360px; height:493px; padding:27px 0 0 50px; font-size:11px;}
+.bigTitle { font-size:30px; font-weight:normal; color:#ea5e00; color:#ea5e00; line-height:38px;}
+#userID { width:278px; height:36px; border:1px solid #bcbcbc;}
+#password { width:278px; height:36px; border:1px solid #bcbcbc;}
+#code { width:143px; height:36px; border:1px solid #bcbcbc;}
+#remember { margin-top:30px;}
+.rememberBox { height:60px; line-height: 70px;}
+#login { width:280px; height:44px; background:#b40707; color:#fff; font-size:18px; font-weight:bold;border:0; cursor:pointer;}
+input{ margin-top:15px; font-size:16px; text-indent:10px;}
+.bottonBox { border-top:1px solid #bcbcbc;}
+.register { line-height:50px;}
+.register a { font-size:14px; color:#ff9937; font-weight:bold;}
+.iconfont{ cursor: pointer;}
+.words { color:#999;}
+#validCode { display:inline-block; width: 60px; line-height:30px; background:#e5e5e5; margin:0 5px; font-size:20px; text-align:center;}
+
+/*底部样式*/
+.longBar{ height:1px; width:100%;background: #e0e0e0; margin:30px 0 37px 0; }
+#footer{ text-align: center; font-size:12px; color:#999; line-height: 25px;}
+#footer a { text-decoration: underline; font-size:14px; margin-right:10px; color:#999;}

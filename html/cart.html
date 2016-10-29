@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>吴秋彤  购物车</title>
+		<link href="../favicon.ico" rel="shortcut icon" />	
+		<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="../css/public.css" rel="stylesheet" type="text/css" />
+		<link href="../css/cart.css" rel="stylesheet" type="text/css"  />
+		<script type="text/javascript" src="../js/jquery_1.11.3.min.js" ></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../js/public.js" ></script>
+		<script src="../js/cart.js"></script>
+	</head>
+	<body>
+		<!--右侧小图标-->
+		<ul id="fixedIcon">
+			<li class="backTop"><i class="iconfont">&#xe625;</i></li>
+			<li class="moreQue"><i class="iconfont ">&#xe60e;</i></li>
+			<li class="sevice"><i class="iconfont">&#xe627;</i></li>
+		</ul>
+		<!--右侧按钮点击弹出模态窗口-->
+		<div class="modalWrap">
+			<div class="modal">
+				<div>
+					<p class="bold left">疑问类型:</p>
+					<i class="closeBtn iconfont right">&#xe63c;</i>
+				</div>
+				<p class="clear">
+					<select>
+						<option value="">请选择疑问类型</option>
+						<option value="">商品质量(手机、平板等软、硬件质量)</option>
+						<option value="">商品缺货</option>
+						<option value="">物流发货(发货快慢、发错货、送件人态度等)</option>
+						<option value="">售后服务(服务网点、维修、退换货、客服)</option>
+						<option value="">网站问题(商城功能失效、不好用等)</option>
+						<option value="">其他问题</option>
+					</select>
+				</p>
+				<p class="bold">您的问题或建议：</p>
+				
+					<textarea placeholder="谢谢您的宝贵建议，我们将不断改进"></textarea>
+				
+				<p>您的联系方式：</p>
+				<input class="contact" type="text" placeholder="选填，邮箱或者商城账户"/>
+
+				<p class="marT10">
+					<input id="code" type="text" />
+					<span id="validCode">1234</span>
+					<i class="random iconfont">&#xe630;</i>
+					<input class="right submitBtn" type="button" value="提交" /> 
+				</p>
+			</div>
+		</div>
+		<!--顶部-->
+		<div id="topWrap">
+			<div id="top">
+				<ul class="topLeft left">
+					<li class="marL0">
+						<a href="##">华为官网</a>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li>
+						<a href="##">荣耀官网</a>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li class="dropParent">
+						<a href="##">软件应用</a>
+						<ul class="drop">
+							<li><a href="##">软件应用</a><span class="iconfont">&#xe61a;</span></li>
+							<li><a href="##">EMUI</a></li>
+							<li><a href="##">应用市场</a></li>
+							<li><a href="##">云服务</a></li>
+							<li><a href="##">开发者联盟</a></li>
+						</ul>
+					</li>
+					<li class="marL0">
+						<span class="iconfont">&#xe617;</span>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li>
+						<a href="##">花粉俱乐部</a>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li>
+						<a href="##">selectRegion</a>
+					</li>
+				</ul>
+				<ul class="topRight right">
+					<li class="logReg dropParent marL0">
+						<a class="login" href="html/login.html">登陆</a>
+						<a class="register" href="html/register.html">注册</a>
+						
+						<!--<a class="left" href="##">159****558...</a>
+						<i class="iconfont level">&#xe619;</i>
+						<i class="iconfont">&#xe617;</i>
+						
+						<ul class="drop logDrop">
+							<li>
+								<a class="left" href="##">159****558...</a>
+								<i class="iconfont level">&#xe619;</i>
+								<i class="iconfont">&#xe61a;</i>
+							</li>
+							<li>
+								<a href="index.html">我的华为账号 </a>
+								<a href="index.html"> 退出</a>
+							</li>
+						</ul>-->
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li>
+						<a href="##">我的订单</a>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li>
+						<a href="##">V码(优购码)</a>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li>
+						<a href="##">手机版</a>
+					</li>
+					<i class="iconfont">&#xe601;</i>
+					<li class="dropParent">
+						<a href="##">网站导航</a>
+						<ul class="drop h170">
+							<li><a href="##">网站导航</a><span class="iconfont">&#xe61a;</span></li>
+							<li><a href="##">帮助中心</a></li>
+							<li><a href="##">PC软件</a></li>
+							<li><a href="##">数字音乐</a></li>
+							<li><a href="##">爱旅</a></li>
+							<li><a href="##">华为网盘</a></li>
+						</ul>
+					</li>
+					<li class="marL0">
+						<span class="iconfont">&#xe617;</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部-->
+		<div id="header" class="clear">
+			<div class="logo left">
+				<h1><a href="../index.html"><img src="../images/img/newLogo.png" /></a></h1>
+			</div>
+			<div class="tip right">
+				<img src="../images/img/tips.png" />
+			</div>
+				
+		</div>
+		<!--内容区域-->
+		<div class="wrap">
+		<table>
+			<thead>
+				<tr>
+					<th class="tr-check">
+						<input type="checkbox" />
+					</th>
+					<th class="tr-pro">商品</th>
+					<th class="tr-price">单价(元)</th>
+					<th class="tr-num">数量</th>
+					<th class="tr-count">小计(元)</th>
+					<th class="tr-operate">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--<tr>
+					<td class="tr-check">
+						<input type="checkbox" />
+					</td>
+					<td class="tr-pro">
+						<div class="pro-area">
+							<p class="p-img left">
+								<img src="../images/details/res1/hwMate8/meiguijin.jpg"  />
+							</p>
+							<p class="p-name">
+								华为荣耀六
+							</p>
+							<p class="p-color">
+								颜色：黑色
+							</p>
+						</div>
+					</td>
+					<td class="tr-price">￥1999.00</td>
+					<td class="tr-quan">
+						<div class="sc-area">
+							<div class="area">
+								<i class="iconfont plus">&#xe61a;</i>
+								<i class="iconfont minu">&#xe617;</i>
+								<input class="numBox" type="text" value="1"/>
+							</div>
+						</div>
+					</td>
+					<td class="tr-total">￥1999.00</td>
+					<td class="tr-operate">
+						<i class="iconfont del">&#xe63c;</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="tr-check">
+						<input type="checkbox" />
+					</td>
+					<td class="tr-pro">
+						<div class="pro-area">
+							<p class="p-img left">
+								<img src="../images/details/res1/hwMate8/meiguijin.jpg"  />
+							</p>
+							<p class="p-name">
+								华为荣耀六
+							</p>
+							<p class="p-color">
+								颜色：黑色
+							</p>
+						</div>
+					</td>
+					<td class="tr-price">￥1999.00</td>
+					<td class="tr-quan">
+						<div class="sc-area">
+							<div class="area">
+								<i class="iconfont plus">&#xe61a;</i>
+								<i class="iconfont minu">&#xe617;</i>
+								<input class="numBox" type="text" value="1"/>
+							</div>
+						</div>
+					</td>
+					<td class="tr-total">￥1999.00</td>
+					<td class="tr-operate">
+						<i class="iconfont del">&#xe63c;</i>
+					</td>
+				</tr>-->
+			
+			</tbody>
+		</table>
+		<div class="total-area">
+			<div class="selectBox left">
+				<input type="checkbox" id="all"/>
+				<label for="all">全选</label>
+				<a href="##" id="delSelect">删除选中商品</a>
+			</div>
+			<p id="totalCount" class="right">合计：<span>￥0.00</span></p>
+		</div>
+		<p class="btnBox">
+			<a href="##" class="go-count right">去结算</a>
+			<a href="../index.html" class="go-on right">继续购物</a>
+		</p>
+		</div>
+		<!--底部-->
+		<div id="footWrap">
+			<div id="foot">
+				<ul class="promise">
+					<li><i class="iconfont">&#xe61d;</i><span>500强品质保证</span></li>
+					<li><i class="iconfont">&#xe61f;</i><span>7天退货 15天换货</span></li>
+					<li><i class="iconfont">&#xe62a;</i><span>99元起免运费</span></li>
+					<li><i class="iconfont">&#xe608;</i><span>448家维修网点 全国联保</span></li>
+				</ul>
+				<ul class="tips">
+					<li>
+						<ul>
+							<li class="iconTitle"><i class="iconfont">&#xe614;</i> 帮助中心</li>
+							<li><a href="##">购物指南</a></li>
+							<li><a href="##">配送方式</a></li>
+							<li><a href="##">支付方式</a></li>
+							<li><a href="##">常见问题</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="iconTitle"><i class="iconfont">&#xe61e;</i> 售后服务</li>
+							<li><a href="##">保修政策</a></li>
+							<li><a href="##">退换货政策</a></li>
+							<li><a href="##">退换货流程</a></li>
+							<li><a href="##">保修状态查询</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="iconTitle"><i class="iconfont">&#xe61c;</i> 技术支持</li>
+							<li><a href="##">售后网点</a></li>
+							<li><a href="##">预约维修</a></li>
+							<li><a href="##">手机寄修服务</a></li>
+							<li><a href="##">维修配件价格</a></li>
+							<li><a href="##">软件下载</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="iconTitle"><i class="iconfont">&#xe611;</i> 关于商城</li>
+							<li><a href="##">公司介绍</a></li>
+							<li><a href="##">华为商城简介</a></li>
+							<li><a href="##">联系客服</a></li>
+						</ul>
+					</li>
+					<li class="w90">
+						<ul>
+							<li class="iconTitle"><i class="iconfont">&#xe613;</i> 关注我们</li>
+							<li><a href="##">新浪微博</a></li>
+    						<li><a href="##">腾讯微博</a></li>
+							<li><a href="##">花粉俱乐部</a></li>
+							<li><a href="##">商城手机版</a></li>
+						</ul>
+					</li>
+				</ul>
+				<p id="friendLink">
+				友情链接：<i class="iconfont">&#xe601;</i>
+				<a href="##">华为官网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">华为华为消费者业务</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">荣耀官网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">花粉俱乐部</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">莫塞尔商城</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">爱旅官网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">华为应用市场</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">万表网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">手机之家</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">中商情报网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">钻石小鸟</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">刷机精灵</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">安卓市场</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">优购物官网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">移动叔叔</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">奥特莱斯</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">中关村商城</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">酷狗音乐</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">华为商城手机版</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">手机世界</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">百信手机网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">一呼百应网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">卡宝宝网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">多特软件下载</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">嗨淘网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">同步助手</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">蜂鸟摄影网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">奇珀论坛</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">家具商城</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">世界名表</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">拍鞋网商城</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">欧宝丽珠宝</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">寻购网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">九块邮官网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">安卓游戏</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">阿里巴巴生意经</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">手机大全</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">安卓软件园</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">卓大师刷机</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">智机论坛</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">电子产品世界</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">利趣网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">网购返利</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">中国供应商</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">Apple110</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">91.手机门户网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">添翼圈社区</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">易购官网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">美乐乐家具网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">智能电视网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">快递查询</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">亿智蘑菇手机网</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">UC浏览器</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">以旧换新</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">华为P9</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">携程租车</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##">安卓市场</a>
+				<i class="iconfont">&#xe601;</i>
+				<a href="##" class="red">申请链接>></a>
+			</p>
+				<div id="copyRight">
+					<p>隐私政策 服务协议 Copyright &copy; 2012-2016 VMALL.COM 版权所有 保留一切权利</p>
+					<p>
+						<img src="../images/img/20160226162651249.png"/>
+					<a href="##">苏公网安备 32011402010009号</a>
+					<i class="iconfont">&#xe601;</i>
+					<a href="##">苏公网安备 32011402010009号</a>
+					<i class="iconfont">&#xe601;</i>
+					<a href="##">苏ICP备 09062682号-9</a>
+					<i class="iconfont">&#xe601;</i>
+					<span>增值电信业务经营许可证：苏B2-20130048</span>
+					<i class="iconfont">&#xe601;</i>
+					<a href="##">网络文化经营许可证：苏网文[2012]0401-019号</a>
+					</p>
+					<p class="footImg">
+						<img src="../images/img/20160226162415360.png" />
+						<img src="../images/img/20160226162521265.png" />
+						<img src="../images/img/20160226162531395.png" />
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

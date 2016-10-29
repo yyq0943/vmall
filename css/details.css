@@ -1,0 +1,66 @@
+.productList>li { background:rgba(0,0,0,.7);  }
+.productList>li:hover{ background: rgba(0,0,0,.8);}
+.productList>li>a { color:#fff;}
+.main { width:1200px; height:auto; border:1px solid #eee; margin:10px auto 0;overflow: hidden;}
+.imgBox { position:relative; padding:130px 56px;border-right:1px solid #eee;}
+.imgBox img { width:428px;}
+.gwcInner2 { display: none !important;}
+/*放大镜*/
+.imgzoom-main {position: relative;width: 428px;height: 428px;}
+.imgzoom-main img {display: block;width: 428px;height: 428px;cursor: move;}
+.imgzoom-shot {display: none;position: absolute;top: 0;left: 0;width: 200px;height: 200px;z-index: 1;cursor: move;border: 1px solid #aaa;background: #fede4f 50% top no-repeat;opacity: 0.5;filter: alpha(opacity=50);}
+.imgzoom-pop {display: none;position: absolute;top: 173px;left: 542px;width: 400px;height: 400px;border: 1px solid #eee;border-top: 0;background: #fff;overflow: hidden;z-index:9999;}
+.imgzoom-pop img {position: absolute;width: 800px;height: 800px;top: -396px;left: -347px;}
+/*右边商品属性区域*/
+.proBox { width:659px; }
+.first {  border-bottom:1px solid #eee;padding:0 29px 20px;}
+.title { line-height:96px; font-size:20px; height:67px; }
+.words { line-height:20px; color:#e01d20;}
+.second { font-size:11px; padding:0 29px; line-height:24px; height:160px;border-bottom:1px solid #eee;}
+.second b { font-size: 30px; color:#e01d20;line-height:50px;}
+.second .iconfont{font-size:50px;}
+.second a { color:#e01d20;}
+.second span { color:#e01d20;}
+.second a:hover{ text-decoration: underline;}
+.third {font-size:11px; padding:15px 29px 0;  }
+.third>li { margin-bottom:10px;}
+.third>li>span{ position:relative;display: inline-block; padding:8px;border:1px solid #b2b2b2;}
+.third>li>span>.on{ position:absolute; right:0; bottom:0; display: none;}
+.colorList { display: inline-block;}
+.colorList>li { text-align: center; float: left; margin-right: 10px;}
+.colorList>li>span { position:relative;display:inline-block;width:40px; height:40px; border:1px solid #b2b2b2;}
+.colorList>li>span>.colorImg { width:40px; height:40px;}
+.colorList>li>span>.on { position:absolute; right:0; bottom:0; display: none;}
+.colorList>li>i { display: block;}
+.other>ul>li>span{ position:relative;display: inline-block; padding:8px;border:1px solid #b2b2b2;}
+.other>ul>li>span>.on{ position:absolute; right:0; bottom:0; display: none;}
+.other>ul { display: inline-block;}
+.other>ul>li { float:left; margin-right:8px;}
+.other>ul>li>span>a { color:#000;}
+.third span{ cursor: pointer;}
+.select { margin-top:40px; }
+.select i{ color:#e01d20;}
+#addCart { display:block;width:190px; height:35px; background:#e01d20;color:#fff; text-align: center; line-height:42px; font-size:16px;}
+.totalBox { display:inline-block;position:relative;width:58px; height:40px;}
+.totalBox input { position:absolute;left:0; top:0;width:18px; height:20px; padding:8px; }
+.totalBox span { position:absolute;display: block; width:18px; height:18px;border:1px solid #ccc; text-align: center;}
+.totalBox .plus {　position:absolute; top:0; right:0;}
+.totalBox .minu {　position:absolute; right:0; bottom:0;}
+/*商品详情*/
+.showWrap { width:1200px;height:auto; margin:20px auto 0;}
+.hotBox { width:238px; height:auto; border:1px solid #dedede;margin-bottom:100px;}
+.hotBox .simple{ height:47px; background:#f7f7f7; line-height:47px;}
+.hotBox li { position:relative;padding:14px;height:60px;border-bottom:1px solid #dedede;}
+.hotBox img { width:57px;}
+.hotWords { width:138px; font-size:11px;}
+.hotWords a { color:#666;}
+.hotWords a:hover{ text-decoration: underline;}
+.hotWords span { display: block; color:#e01d20;}
+.hotBox i{ position:absolute; left:-3px; top:-5px; color:#e01d20; font-size:30px;}
+.hotBox b { position:absolute; left:5px; top:5px; font-size:14px; color:#fff;}
+.ccc i{ color:#666;}
+.showBox {width:943px; height:auto; border:1px solid #dedede; border-bottom:transparent;}
+.showBox li { width:114px; border-right:1px solid #dedede; float:left; line-height:48px;text-align:center;border-bottom:1px solid #dedede;}
+.showBox li div {  left:-1px; top:49px; width:842px; height:auto;border:1px solid #dedede; border-top:transparent; display: none; padding:0 50px;}
+.showImg img { display: block;}
+

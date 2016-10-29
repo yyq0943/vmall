@@ -1,0 +1,36 @@
+.tip {　height:80px; padding-top: 35px; }
+table {width:1200px; height:auto; margin:0 auto; border-collapse: collapse; border-spacing: 0; table-layout: fixed;font-size:12px;}
+thead {　height:30px; background: #f7f7f7 ; }
+th { font-weight: normal;}
+tr { border:1px solid #dedede;}
+.tr-check { width:37px;padding-right:9px; text-align: center;}
+.tr-price { width:155px;text-align: center;}
+.tr-num { width:140px;text-align: center;}
+.tr-count { width:155px;text-align: center;}
+.tr-operate{ width:100px;text-align: center;}
+tbody{ display: table-row-group; vertical-align: middle;}
+.pro-area { overflow:hidden;padding:20px 20px 20px 0;}
+.p-img { width:80px; height:65px;}
+.p-img img { width:65px; border:1px solid #dedede;}
+.p-color{ color:#999;}
+.tr-quan{ width:140px;text-align: center; border-right:1px solid #dedede;border-left:1px solid #dedede;}
+.tr-total { width:155px;text-align: center; border-right:1px solid #dedede;}
+.sc-area { position:relative;width:100%; height:38px;}
+.area { position:relative;width:58px; height:38px;margin:0 auto;}
+.numBox { position:absolute; width:16px;top:2px; left:0;padding:10px 8px; border:1px solid #dedede;}
+.plus { position:absolute; top:0; right:0; border:1px solid #dedede;}
+.minu { position:absolute; bottom:0; right:0; border:1px solid #dedede;}
+i { cursor:pointer;}
+.total-area {padding-top:20px; width:1198px; height:50px; margin:20px auto 25px; border:1px solid #dedede;font-size:12px;}
+.selectBox {  color:#00A0E9;}
+.selectBox a { color:#00A0E9;margin-left:10px;}
+label { margin-left:10px; cursor:pointer;}
+#all { margin-left:13px;}
+#totalCount { margin-right:20px;}
+#totalCount span { font-size:20px; color:#ca141d;}
+.btnBox { width:1200px; height:50px; margin:0 auto 100px;}
+.btnBox a { display: inline-block; width:150px; height:40px; line-height:40px; text-align: center;}
+.go-on { border:1px solid #dedede; color:#000;margin-right:20px;}
+.go-count { background: #ca141d; color:#fff;}
+.smile{ width:1200px; height:600px; margin:0 auto; text-align: center;}
+.smileImg { margin:200px;}

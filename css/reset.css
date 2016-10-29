@@ -1,0 +1,50 @@
+body,html,div,p,ul,li,ol,dl,dt,dd,
+span,img,h1,h2,h3,h4,h5,h6,strong,b,i,em
+ { margin:0; padding:0; border:0;}
+body { font-family: "microsoft yahei";}
+ul,ol,li { list-style: none;}
+em,i { font-style: normal;}
+strong,b { font-weight: normal;}
+a { text-decoration: none; color:#b0b0b0;}
+img { outline: none;}
+input {outline: none;}
+select { outline: none;}
+textarea { outline: none;}
+.bold { font-weight:bold;}
+.left { float: left;}
+.right { float: right;}
+.clear { clear:both;}
+.marL0 {margin-left:0 !important;}
+.marR0 {margin-right:0 !important;}
+.marT0 {margin-top:0 !important;}
+.marB0 {margin-bottom:0 !important;}
+.padL0 {padding-left:0 !important;}
+.padR0 {padding-right:0 !important;}
+.padT0 {padding-top:0 !important;}
+.padB0 {padding-bottom:0 !important;}
+.borL0 {border-left:0 !important;}
+.borR0 {border-right:0 !important;}
+.borT0 {border-top:0 !important;}
+.borB0 {border-bottom:0 !important;}
+.clearfix:after{
+	display: block;
+	content: "";
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+/*iconfont声明*/
+@font-face {font-family: 'iconfont';
+    src: url('iconfont/iconfont.eot'); /* IE9*/
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+   
